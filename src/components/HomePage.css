@@ -1,0 +1,222 @@
+body {
+    background-color: #F7FAFA; /* Set background color for the body */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure body takes full height of the viewport */
+    overflow: visible; /* Prevent scrolling */
+    display: block;
+}
+
+.home-page {
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+.header {
+    display: flex; /* Use flexbox for header layout */
+    justify-content: space-between; /* Space between logo and button */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below header */
+    padding: 0 5%; /* Add horizontal padding */
+}
+
+.logo {
+    margin-top: 1.5%;
+    height: 50px; /* Adjust logo size as needed */
+}
+
+.navigate-button {
+    margin-top: 1.5%;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1em;
+    background-color: #E8EDF2; /* Button background color */
+    font-weight: bold;
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer on hover */
+    margin-left: auto; /* Push the button to the right */
+}
+
+.team-grid p {
+    color: #4F7A94;
+}
+
+.home-page h1 {
+    font-size: 2em; /* Larger font size for the main heading */
+    margin-bottom: 30px; /* Space below heading */
+    margin-top: 4%;
+    margin-left: 18%; /* You might want to adjust this */
+}
+
+.home-page h2 {
+    font-size: 1.5em; /* Font size for the subheading */
+    margin-bottom: 30px; /* Space below subheading */
+    margin-left: 18%; /* You might want to adjust this */
+}
+
+.team-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px; /* Set a maximum width for the grid */
+    margin: 0 auto; /* Center the grid */
+    cursor: pointer;
+}
+
+.team-card {
+    background-color: #F7FAFA; /* Card background color */
+    border: 4px solid #D1DEE5; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the card */
+    text-align: center; /* Center align text in cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.status-icon {
+    font-size: 2em; /* Increase the icon size */
+    margin-bottom: 10px; /* Space below icon */
+}
+
+.error {
+    border: 4px solid #D1DEE5; /* Card border */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller screens (1024px and below) */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .home-page h1,
+    .home-page h2 {
+        margin-left: 10%; /* Adjust margins for smaller screens */
+    }
+
+    .team-grid {
+        margin: 10%;
+        margin-top: 0;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+}
+
+/* Mobile screens (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        padding: 0 2%; /* Less padding for mobile */
+    }
+
+    .home-page h1,
+    .home-page h2 {
+        margin-left: 5%; /* Adjust margins */
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    .team-grid {
+        margin-top: 0;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+
+    .navigate-button {
+        width: 100%; /* Full width button */
+        margin-top: 10px; /* Space above button */
+    }
+}
+
+/* Small mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .home-page h1 {
+        font-size: 1.2em; /* Smaller header */
+    }
+
+    .home-page h2 {
+        font-size: 1em; /* Smaller subheading */
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller screens (1024px and below) */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .home-page h1,
+    .home-page h2 {
+        margin-top: 0;
+        margin-left: 10%; /* Increase left margin for smaller screens */
+    }
+
+    .team-grid {
+        margin: 10%;
+        margin-top: 0;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+
+    .navigate-button {
+        align-self: flex-end; /* Align button to the bottom right */
+    }
+
+}
+
+/* Mobile screens (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        padding: 0 2%; /* Less padding for mobile */
+    }
+
+    .home-page h1,
+    .home-page h2 {
+        margin-top: 0;
+        margin-left: 10%; /* Adjust margins */
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    .team-grid {
+        margin-top: 0;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+
+    .navigate-button {
+        width: 6rem; /* Keep button size small */
+        height: 2.5rem; /* Keep button size small */
+        align-self: flex-end; /* Align button to the bottom right */
+    }
+}
+
+/* Small mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .home-page h1 {
+        margin-top: 0;
+        font-size: 1.2em; /* Smaller header */
+    }
+
+    .home-page h2 {
+        margin-top: 0;
+        font-size: 1em; /* Smaller subheading */
+    }
+
+    .team-grid {
+        margin-top: 0;
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+
+    .navigate-button {
+        width: 6rem; /* Keep button size small */
+        height: 2.5rem; /* Keep button size small */
+        align-self: flex-end; /* Align button to the bottom right */
+    }
+}

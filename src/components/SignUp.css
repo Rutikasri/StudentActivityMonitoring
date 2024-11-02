@@ -1,0 +1,212 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+}
+
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  flex-direction: row; /* Align form and image side by side */
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #F7FAFA;
+  margin-top: 4%;
+}
+
+.form-container {
+  display: block;
+  flex-direction: column;
+  width: 100%; /* Allow form to take the full width of its container */
+  max-width: 800px;
+  margin-left: 6%;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+
+p {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container form {
+  align-self: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  font-size: 16px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.signup-container .form-group input {
+  padding: 10px;
+  font-size: 16px;
+  height: 45px;
+  width: 85%; /* Ensure inputs take 85% of the width */
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 3px solid #D9D9D9;
+}
+
+.signup-container button {
+  font-size: 20px;
+  font-weight: bold;
+  width: 85%;
+  height: 50px;
+  background-color: #3A5B22;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.signup-container button:hover {
+  background-color: #294614;
+}
+
+.login {
+  font-size: 18px;
+  align-self: flex-start;
+}
+
+.image-container {
+  width: 35%; /* Adjust this value as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center image vertically */
+  margin-right: 6%;
+}
+
+.image-container img {
+  width: 100%; /* Ensure the image takes full width of its container */
+  height: auto; /* Keep the image aspect ratio */
+  max-width: 900px; /* Increase the max width for larger display */
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller laptops (screen width less than 1024px) */
+@media (max-width: 1024px) {
+  .signup-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+  }
+
+  .form-container {
+      width: 100%;
+  }
+
+  .signup-container .form-group input, .signup-container button {
+      width: 90%;
+  }
+
+  h2, p {
+      text-align: center;
+      color: #333;
+  }
+
+  .image-container {
+    display: none; /* Hide image on small devices */
+}
+}
+
+/* For mobile devices (screen width less than 768px) */
+@media (max-width: 768px) {
+  .signup-container {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 28px;
+      text-align: center;
+      color: #333;
+  }
+
+  p {
+      font-size: 16px;
+      text-align: center;
+      color: #333;
+  }
+
+  .signup-container .form-group input {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .signup-container button {
+      height: 45px;
+      font-size: 18px;
+  }
+
+  .login {
+      font-size: 14px;
+  }
+
+  .image-container {
+      display: none; /* Hide image on small devices */
+  }
+}
+
+/* For extra small mobile devices (screen width less than 480px) */
+@media (max-width: 480px) {
+  h2 {
+      font-size: 24px;
+      text-align: center;
+      color: #333;
+  }
+
+  p {
+      font-size: 14px;
+      text-align: center;
+      color: #333;
+  }
+
+  .signup-container .form-group input {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  .signup-container button {
+      height: 40px;
+      font-size: 16px;
+  }
+
+  .login {
+      font-size: 14px;
+  }
+
+  .image-container {
+      display: none; /* Hide image on extra small devices */
+  }
+}
+.error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 4px;
+}

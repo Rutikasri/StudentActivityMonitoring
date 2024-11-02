@@ -1,0 +1,172 @@
+/* Container for the entire page */ 
+body, html { 
+    margin: 0; 
+    padding: 0.5%; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #F7FAFA; 
+    display: block; 
+} 
+
+/* Main container */ 
+.teamlead-container { 
+    margin-left: 1.3%;
+    display: flex; 
+    font-family: Arial, sans-serif; 
+    height: 100vh; /* Full height of the viewport */ 
+} 
+
+/* Sidebar styling */ 
+.sidebar { 
+    width: 350px; /* Fixed width for sidebar */ 
+    padding-left: 2%;
+    padding: 15px; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #F7FAFA; /* Background color */ 
+} 
+
+.sidebar .logo{ 
+    margin-left: 0;
+    margin-top: 0; 
+    margin-bottom: 8%; 
+} 
+
+/* Main content styling */    
+.main-content { 
+    align-items: center; 
+    flex-grow: 1; /* Take the remaining space */ 
+    padding: 40px; /* Add padding for content */ 
+    padding-top: 3%; 
+} 
+
+.main-content .tasks h3{ 
+    color: #0D171C; 
+} 
+
+.main-content .tasks p{ 
+    color: #4F7A94; 
+} 
+
+.main-content .tasks h3,p{ 
+    margin-left: 2%; 
+} 
+
+/* Menu header styling */ 
+.menu-header { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 40px; 
+    cursor: pointer;
+} 
+
+.menu-icon { 
+    font-size: 25px;
+    margin-right: 10px; 
+} 
+
+.menu-text { 
+    font-size: 20px; 
+    margin-left: 5%; 
+    color: #333; 
+} 
+
+.sidebar ul { 
+    list-style: none; 
+    padding: 0; 
+} 
+
+.sidebar li { 
+    width: 100%; 
+    height: 30%; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    color: #555; 
+    margin-left: 1%; 
+} 
+
+.sidebar li .side{ 
+    margin-left: 5%; 
+    margin-top: 6%; 
+    align-items: center; 
+} 
+
+.sidebar li:hover{ 
+    background-color: #E8EDF2; 
+} 
+
+.sidebar li.active { 
+    color: #000; 
+} 
+    
+.icon { 
+    font-size: 20px; 
+    margin-right: 10px; 
+} 
+
+/* Team Lead and Members styling */ 
+.member-name, .task { 
+    display: flex; 
+    justify-content: space-between; /* Space between name and status */ 
+    align-items: center; /* Center vertically */ 
+    background-color: #F7FAFA; 
+    border-radius: 8px; 
+    cursor: pointer; 
+} 
+
+/* .member-name:hover, .task:hover{ 
+    background-color: #E8EDF2; 
+}  */
+
+.member-name img, .task img { 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+} 
+
+/* Content inside cards */ 
+.member-name div, .task div { 
+    flex-grow: 1; /* Allow this div to grow */ 
+} 
+
+/* Status button styling */ 
+.status { 
+    padding: 10px 20px; 
+    border-radius: 15px; 
+    font-size: 14px; 
+    min-width: 120px; 
+    height: 40px; 
+    border: none; /* Remove default button border */ 
+    cursor: pointer; 
+    text-align: center; /* Center text within the button */ 
+} 
+
+.status.active { 
+    background-color: #E8EDF2; 
+    color: #0D171C; 
+    font-weight: bold; 
+} 
+
+.status.inactive { 
+    background-color: #E8EDF2; 
+    color: #0D171C; 
+    font-weight: bold; 
+} 
+
+/* Team section headings */ 
+h1 { 
+    font-size: 30px; 
+    color: #0D171C; 
+    margin-bottom: 30px; 
+    text-align: left; /* Align heading to the left */ 
+    margin-left: 0; 
+} 
+
+.student { 
+    margin-bottom: 8%; 
+}

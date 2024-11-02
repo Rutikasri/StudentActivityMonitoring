@@ -1,0 +1,204 @@
+/* General Page Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F7FAFA;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.hackathon-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar1 {
+    width: 350px;
+    padding: 15px;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7FAFA;
+}
+
+.sidebar1 .logo {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 8%;
+}
+
+/* Main Content Styling */
+.team-page-container {
+    flex-grow: 1;
+    padding: 90px;
+    padding-top: 4%;
+    background-color: #F7FAFA; /* Optional: Add a background color */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Heading Styles within Team Page */
+.team-page-container h1 {
+    font-size: 40px;
+    color: #0D171C;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Hackathon Grid Styling */
+.hackathon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 80px;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+.hackathon-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    width: 380px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.hackathon-card:hover {
+    transform: translateY(-5px);
+}
+
+.hackathon-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hackathon-card h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.hackathon-card p {
+    font-size: 18px;
+    text-align: left;
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hackathon-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        row-gap: 40px;
+    }
+
+    .hackathon-card {
+        width: auto; /* Allow cards to adjust width */
+        padding: 40px; /* Reduced padding for smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+}
+
+@media (max-width: 768px) {
+    .hackathon-grid {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+        margin-top: 20px; /* Reduced margin for smaller screens */
+    }
+
+    .team-page-container {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+    .hackathon-card h3 {
+        text-align: left;
+    }
+
+    .hackathon-card h2 {
+        text-align: left;
+    }
+
+    .hackathon-card p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-page-container h1 {
+        font-size: 30px; /* Smaller heading for small screens */
+    }
+
+    .hackathon-card h3 {
+        text-align: left;
+        font-size: 16px; /* Adjust heading size in card */
+    }
+
+    .hackathon-card h2 {
+        font-size: 24px; /* Smaller heading in card */
+        text-align: left;
+    }
+
+    .hackathon-card p {
+        text-align: left;
+        font-size: 16px; /* Smaller text in card */
+    }
+}
+
+/* Status Button Styling */
+.status {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    min-width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.status.active {
+    background-color: #E8EDF2;
+    color: #0D171C;
+    font-weight: bold;
+}
+
+.sidebar1 ul { 
+    list-style: none; 
+    padding: 0; 
+} 
+
+.sidebar1 li { 
+    width: 100%; 
+    height: 70%; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    color: #555; 
+    margin-left: 1%; 
+} 
+
+.sidebar1 li .side{ 
+    margin-left: 5%; 
+    margin-top: 6%; 
+    align-items: center; 
+} 
+
+.sidebar1 li:hover{ 
+    background-color: #E8EDF2; 
+} 
+
+.sidebar1 li.active { 
+    color: #000; 
+} 
+    
+.icon { 
+    font-size: 20px; 
+    margin-right: 10px; 
+} 

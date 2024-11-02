@@ -1,0 +1,78 @@
+/* Sidebar styling */
+.sidebar { 
+    width: 350px; /* Fixed width for sidebar */ 
+    padding-left: 2%;
+    padding: 15px; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #F7FAFA; /* Background color */ 
+    height: 100vh; /* Full viewport height for a fixed sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+} 
+
+.sidebar .logo { 
+    margin: 0 0 8% 0; /* Adjusted shorthand for margins */
+    display: flex;
+    align-items: center;
+} 
+
+.sidebar .logo img {
+    width: 80%; /* Scale logo */
+    height: auto;
+}
+
+/* Menu header styling */ 
+.menu-header { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 40px; 
+    cursor: pointer;
+} 
+
+.menu-icon { 
+    font-size: 25px;
+    margin-right: 10px; 
+} 
+
+.menu-text { 
+    font-size: 20px; 
+    margin-left: 5%; 
+    color: #333; 
+}
+
+/* Sidebar menu styling */
+.sidebar ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+} 
+
+.sidebar li { 
+    display: flex; 
+    align-items: center; 
+    padding: 10px 15px;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    color: #555; 
+    transition: background-color 0.3s ease;
+} 
+
+.sidebar li .side { 
+    margin-left: 10px; /* Align icon and text */ 
+} 
+
+.sidebar li:hover { 
+    background-color: #E8EDF2; 
+}
+
+.sidebar li.active { 
+    color: #000; 
+    font-weight: bold;
+} 
+    
+.icon { 
+    font-size: 20px; 
+    margin-right: 10px; 
+} 
